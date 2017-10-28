@@ -10,5 +10,5 @@ Before using this, consider these from the horse's mouth:
 This add-on is slightly different from the one offered by the Internet Archive:
 
 1. It requires one click instead of two
-2. The new tab with the internet archive is not activated
+2. The new tab with the internet archive is not activated (you stay on the current page)
 3. It offers no functionality to find older versions of a wegpage
