@@ -1,4 +1,4 @@
-# SendToArchive
+# Send To Archive Browser Extension
 Saves the current page to the Internet Archive (https://archive.org/web).
 
 Before using this, consider these from the horse's mouth: 
