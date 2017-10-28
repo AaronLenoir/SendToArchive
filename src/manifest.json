@@ -1,0 +1,56 @@
+{
+  /* 
+      Copyright 2017 Aaron Lenoir
+
+      This file is part of SendToArchive.
+
+      SendToArchive is free software: you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation, either version 3 of the License, or
+      (at your option) any later version.
+
+      SendToArchive is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+
+      You should have received a copy of the GNU General Public License
+      along with SendToArchive.  If not, see <http://www.gnu.org/licenses/>.
+  */
+
+  "author": "Aaron Lenoir",
+  "manifest_version": 2,
+  "name": "Send to Internet Archive",
+  "version": "1.0.0",
+
+  "description": "Saves the current web page as it appears now to the Internet Archive for use as a trusted citation in the future.",
+  "homepage_url": "https://github.com/AaronLenoir/SendToArchive",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "icons": {
+    "16": "icons/add_doc_16.png",
+    "20": "icons/add_doc_20.png",
+    "48": "icons/add_doc_48.png",
+    "64": "icons/add_doc_64.png",
+    "128": "icons/add_doc_128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/add_doc_16.png",
+      "20": "icons/add_doc_20.png",
+      "48": "icons/add_doc_48.png",
+      "64": "icons/add_doc_64.png",
+      "128": "icons/add_doc_128.png"
+    },
+    "default_title": "Save page to the Internet Archive"
+  },
+  
+  "background": {
+    "scripts": ["background_scripts/background.js"],
+    "persistent": false
+  }
+}
