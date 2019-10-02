@@ -1,14 +1,15 @@
 {
   "author": "Aaron Lenoir",
   "manifest_version": 2,
-  "name": "Send to Internet Archive",
-  "version": "1.0.0",
+  "name": "__MSG_extensionName__",
+  "version": "2.0.0",
+  "default_locale": "en",
 
-  "description": "Saves the current web page as it appears now to the Internet Archive for use as a trusted citation in the future.",
+  "description": "__MSG_extensionDescription__",
   "homepage_url": "https://github.com/AaronLenoir/SendToArchive",
 
   "permissions": [
-    "activeTab"
+    "activeTab", "contextMenus"
   ],
 
   "icons": {
@@ -27,7 +28,7 @@
       "64": "icons/add_doc_64.png",
       "128": "icons/add_doc_128.png"
     },
-    "default_title": "Save page to the Internet Archive"
+    "default_title": "__MSG_defaultTitle__"
   },
   
   "background": {

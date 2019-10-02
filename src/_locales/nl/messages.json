@@ -1,0 +1,21 @@
+{
+  "extensionName": {
+    "message": "Naar Internet Archive Verzenden",
+    "description": "Naam van de extensie."
+  },
+
+  "extensionDescription": {
+    "message": "Zal de pagina zoals ze nu te zien is opslaan in het Internet Archive.",
+    "description": "Beschrijving van de extensie."
+  },
+  
+  "defaultTitle": {
+    "message": "Pagina opslaan in het Internet Archive",
+    "description": "Titel van de browser actie."
+  },
+
+  "contextMenuTitle": {
+    "message": "Koppeling opslaan in het Internet Archive",
+    "description": "Titel van het context menu item."
+  }
+}

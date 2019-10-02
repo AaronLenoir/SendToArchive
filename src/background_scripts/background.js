@@ -1,5 +1,5 @@
 /* 
-    Copyright 2017 Aaron Lenoir
+    Copyright 2019 Aaron Lenoir
 
     This file is part of SendToArchive.
 
@@ -19,11 +19,37 @@
 
 var browser = browser || chrome;
 
+browser.contextMenus.create({
+    id: "send-link-to-archive",
+    title: browser.i18n.getMessage("contextMenuTitle"),
+    contexts: ["link"]
+});
+
+browser.contextMenus.create({
+    id: "send-page-to-archive",
+    title: browser.i18n.getMessage("defaultTitle"),
+    contexts: ["page"]
+});
+
 browser.browserAction.onClicked.addListener(function (tabInfo) {
+    sendToInternetArchive(tabInfo.url);
+});
+
+browser.contextMenus.onClicked.addListener((info, tabInfo) => {
+    if (info.menuItemId === "send-link-to-archive") {
+        sendToInternetArchive(info.linkUrl);
+    }
+
+    if (info.menuItemId === "send-page-to-archive") {
+        sendToInternetArchive(tabInfo.url);
+    }
+});
+
+var sendToInternetArchive = function (url) {
     var rootUrl = "https://web.archive.org/save/";
-    var targetUrl = rootUrl + tabInfo.url;
+    var targetUrl = rootUrl + url;
     browser.tabs.create({
         url: targetUrl,
         active: false
     });
-});
+};

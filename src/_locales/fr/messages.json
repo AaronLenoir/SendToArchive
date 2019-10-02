@@ -1,0 +1,21 @@
+{
+  "extensionName": {
+    "message": "Envoyer à Internet Archive",
+    "description": "Nom de l'extension."
+  },
+
+  "extensionDescription": {
+    "message": "Sauvegardera la page telle qu'elle peut être vue dans l'Internet Archive.",
+    "description": "Description de l'extension."
+  },
+  
+  "defaultTitle": {
+    "message": "Enregistrer la page vers l'Internet Archive",
+    "description": "Titre de l'action du browser."
+  },
+
+  "contextMenuTitle": {
+    "message": "Enregistrer le lien vers l'Internet Archive",
+    "description": "Titre de l'élément de menu contextuel."
+  }
+}
