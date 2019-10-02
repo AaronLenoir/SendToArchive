@@ -20,18 +20,28 @@
 var browser = browser || chrome;
 
 browser.contextMenus.create({
-    id: "send-to-archive",
+    id: "send-link-to-archive",
     title: browser.i18n.getMessage("contextMenuTitle"),
     contexts: ["link"]
+});
+
+browser.contextMenus.create({
+    id: "send-page-to-archive",
+    title: browser.i18n.getMessage("defaultTitle"),
+    contexts: ["page"]
 });
 
 browser.browserAction.onClicked.addListener(function (tabInfo) {
     sendToInternetArchive(tabInfo.url);
 });
 
-browser.contextMenus.onClicked.addListener((info) => {
-    if (info.menuItemId === "send-to-archive") {
+browser.contextMenus.onClicked.addListener((info, tabInfo) => {
+    if (info.menuItemId === "send-link-to-archive") {
         sendToInternetArchive(info.linkUrl);
+    }
+
+    if (info.menuItemId === "send-page-to-archive") {
+        sendToInternetArchive(tabInfo.url);
     }
 });
 
