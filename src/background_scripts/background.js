@@ -21,7 +21,7 @@ var browser = browser || chrome;
 
 browser.contextMenus.create({
     id: "send-to-archive",
-    title: "Save linked page to the Internet Archive",
+    title: browser.i18n.getMessage("contextMenuTitle"),
     contexts: ["link"]
 });
 

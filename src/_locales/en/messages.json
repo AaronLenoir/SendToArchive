@@ -1,0 +1,21 @@
+{
+  "extensionName": {
+    "message": "Send to Internet Archive",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Saves the current web page as it appears now to the Internet Archive for use as a trusted citation in the future.",
+    "description": "Description of the extension."
+  },
+  
+  "defaultTitle": {
+    "message": "Save page to the Internet Archive",
+    "description": "Title of the browser action."
+  },
+
+  "contextMenuTitle": {
+    "message": "Save shortcut to the Internet Archive",
+    "description": "Title of the context menu item."
+  }
+}
