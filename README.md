@@ -13,5 +13,5 @@ As of version 2 you can also right-click a link and save it directly.
 If this doesn't rock your boat, try these extensions instead: 
 
 * Chrome: https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak
-* Firefox: https://addons.mozilla.org/en-US/firefox/addon/wayback-machine_new/
+* Firefox: https://addons.mozilla.org/firefox/addon/wayback-machine_new/
 * If you see something, save something: https://blog.archive.org/2017/01/25/see-something-save-something/
